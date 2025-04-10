@@ -16,7 +16,6 @@ Une API REST développée avec NestJS pour gérer des réservations de films, et
 - **Gestion des erreurs** : L'API répond de manière cohérente aux erreurs et aux problèmes de validation
 
 
-```
 ## Structure du Projet
 
 ```
