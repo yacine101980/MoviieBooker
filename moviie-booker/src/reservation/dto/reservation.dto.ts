@@ -3,7 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class ReservationDto {
 @ApiProperty({
-    description: 'TMovie Name',
+    description: 'Movie Name',
     example: 'The wolf of wall street',
 })
 @IsNotEmpty()
