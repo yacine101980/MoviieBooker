@@ -7,12 +7,13 @@ import { MoviesModule } from './movies/movies.module';
 import { ConfigModule } from '@nestjs/config';
 import { HttpModule } from '@nestjs/axios';
 import { JwtService } from '@nestjs/jwt';
+import { ReservationModule } from './reservation/reservation.module';
 
 @Module({
   imports: [UserModule, MoviesModule, HttpModule, 
     ConfigModule.forRoot({
       isGlobal: true,
-    }),
+    }), ReservationModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService, JwtService],
